@@ -554,4 +554,20 @@
       nameInput.addEventListener("input", changeTitle);
 
       function changeTitle() {
-   
+        if (nameInput.value.trim() != "") {
+          document.title = nameInput.value;
+        }
+      }
+
+      // function print() {
+      //   // html2canvas(document.body, { background: true }).then((canvas) => {
+      //   //   const imgData = canvas.toDataURL("image/png");
+      //   //   const pdf = new jsPDF();
+      //   //   pdf.addImage(imgData, "PNG", 0, 0);
+      //   //   pdf.save(document.title + ".pdf");
+      //   // });
+      //   window.print();
+      // }
+    </script>
+  </body>
+</html>
